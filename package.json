@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-theme-persona",
+  "name": "nodebb-theme-gamebasics",
   "version": "4.1.54",
   "nbbpm": {
     "compatibility": "^0.8.2 || ^0.9.0 || ^1.0.0"
   },
-  "description": "Persona theme for NodeBB",
+  "description": "Gamebasics theme for nodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona"
+    "url": "https://github.com/GamebasicsBV/nodebb-theme-gamebasics"
   },
   "keywords": [
     "nodebb",
@@ -32,6 +32,11 @@
       "name": "Barış Soner Uşaklı",
       "email": "baris@designcreateplay.com",
       "url": "https://github.com/barisusakli"
+    },
+    {
+      "name": "Jurgen Welschen",
+      "email": "jurgen.welschen@gmail.com",
+      "url": "https://github.com/meilu"
     }
   ],
   "license": "BSD-2-Clause",

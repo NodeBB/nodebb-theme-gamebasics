@@ -17,5 +17,8 @@
 	],
 	"acpScripts": [
 		"lib/admin.js"
-	]
+	],
+	"staticDirs": {
+		"images": "public/images"
+	}
 }
