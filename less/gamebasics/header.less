@@ -1,0 +1,274 @@
+#menu, .header {
+	.notification-list {
+		
+
+		li {
+		
+
+			a {
+				
+
+				.text {
+					
+				}
+			}
+
+			&.unread {
+				
+
+				.mark-read:after {
+					
+				}
+
+				.mark-read:hover:after {
+					
+				}
+			}
+
+			.mark-read {
+			
+
+				&:after {
+				
+				}
+
+				&:hover {
+				
+
+					&:after {
+						
+					}
+				}
+			}
+		}
+	}
+
+	.chat-list {
+		.notification-list;
+
+		> li {
+		
+
+			&:hover {
+			
+			}
+
+			&:not(:last-child) {
+				
+			}
+
+			&.no_active a {
+			
+			}
+
+			a {
+			
+			}
+
+			.members {
+				
+
+				li {
+				
+				}
+			}
+		}
+	}
+}
+
+.header {
+	background-color: @header-background;
+	border: none;
+	.navbar-brand {
+		color: @text-color;
+	}
+
+	.navbar-nav {
+		 > li {
+		 	> a {
+				 color: @text-color;
+				 &:hover {
+					 color: darken(@text-color, 10%);
+				 }
+			}
+		}
+
+	}
+
+	[component="navbar/title"] {
+		
+	}
+
+
+	.navbar-toggle {
+		.notification-icon {
+		
+			&:before {
+			
+			}
+		}
+	}
+
+	#user_dropdown {
+		
+
+		img, .user-icon {
+		
+
+			span {
+				
+			}
+		}
+	}
+
+	.forum-title {
+		
+	}
+
+	.forum-logo {
+		
+	}
+
+	@media (max-width: @screen-xs-max) {
+		.forum-logo {
+			
+		}
+	}
+
+	.header-topic-title {
+
+		span {
+
+		}
+	}
+
+	.pagination-block {
+
+		&.ready {
+		
+		}
+
+		.progress-container {
+			background: #fff;
+
+			.progress-bar {
+				background: @brand-primary;
+			}
+		}
+
+		.dropdown-toggle {
+		
+		}
+
+		.open>a {
+		
+		}
+
+
+		.dropdown-menu {
+			
+		}
+
+		@media (max-width: @screen-xs-max) {
+			.progress-container {
+			
+			}
+		}
+	}
+
+	.notif-dropdown-link {
+		// margin-top: 1em;
+		
+
+		a {
+		
+		}
+	}
+
+	#search-form {
+		.advanced-search-link {
+			
+		}
+	}
+}
+
+.breadcrumb {
+	li {
+	
+	}
+
+	.fa {
+		color: @text-color;
+	}
+
+
+
+	@media (max-width: @screen-sm-max) {
+		li {
+		
+		}
+
+		li:nth-last-child(2), li:nth-last-child(1), li:last-child {
+			
+		}
+
+		li:nth-last-child(2):before {
+		
+		}
+	}
+}
+
+#reconnect {
+
+
+	&.active {
+		
+	}
+
+	& +div.tooltip .tooltip-inner {
+		
+	}
+}
+
+.unread-count:after {
+
+}
+
+#mobile-menu [component="notifications/icon"].unread-count:after, .slideout-menu .unread-count:after {
+
+}
+
+#search-form {
+	#search-button {
+
+	}
+	#search-button.hidden {
+
+	}
+	#search-fields {
+
+
+		&.hidden {
+			
+		}
+
+		input.form-control {
+		
+		}
+
+		.form-group .advanced-search-link {
+		
+		}
+	}
+}
+
+body.skin-default .header {
+	.notification-list {
+
+		li {
+			a {
+			
+			}
+		}
+	}
+}

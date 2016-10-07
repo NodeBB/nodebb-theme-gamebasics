@@ -25,17 +25,23 @@
 	</div>
 
 	<!-- IF !../link -->
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
-		<small>[[global:topics]]</small>
+	<div class="col-md-1 hidden-sm hidden-xs no-padding">
+		<div class="stats">
+			<span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br />
+			<small>[[global:topics]]</small>
+		</div>
 	</div>
-	<div class="col-md-1 hidden-sm hidden-xs stats">
-		<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
-		<small>[[global:posts]]</small>
+	<div class="col-md-1 hidden-sm hidden-xs no-padding">
+		<div class="stats">
+			<span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br />
+			<small>[[global:posts]]</small>
+		</div>
 	</div>
 	<!-- IF !config.hideCategoryLastPost -->
-	<div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
-		<!-- IMPORT partials/categories/lastpost.tpl -->
+	<div class="col-md-3 col-sm-3 hidden-xs no-padding" component="topic/teaser">
+		<div class="teaser">
+			<!-- IMPORT partials/categories/lastpost.tpl -->
+		</div>
 	</div>
 	<!-- ENDIF !config.hideCategoryLastPost -->
 	<!-- ENDIF !../link -->

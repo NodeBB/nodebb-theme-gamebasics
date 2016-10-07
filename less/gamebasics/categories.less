@@ -44,6 +44,9 @@
 				
 				}
 			}
+			small {
+				
+			}
 		}
 
 		@media (max-width: 500px) {
@@ -135,8 +138,20 @@
 	margin-top: 0px;
 	background: @panel-background;
 	height: @block-height;
-	padding: @block-padding;
+	margin-left: @gap-sm;
+	padding-top: @block-padding;
 	small {
-		color: @primary-text-color;
+		color: @text-color;
 	}
+	span {
+		color: @text-color;
+	}
+}
+
+.teaser {
+	background: @panel-background;
+	height: @block-height;
+	margin-left: @gap-sm;
+	padding: @block-padding;
+	color: @text-color;
 }

@@ -1,27 +1,5 @@
-
-
-/* Start Persona theme variables */
-@material-primary:         #337ab7;
-@material-success:         #4CAF50;
-@material-info:            #717484;
-@material-warning:         #ff6d00;
-@material-danger:          #F44336;
-/* End Persona theme variables */
-
-/* Start bootstrap variables */
-@brand-primary:         #00a8ff;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
-@body-bg: transparant;
-/* End bootstrap variables */
-
 /* Start custom OSM variables */
-
-@primary-text-color: #ffffff;
-@primary-title-color: #00a8ff;
-
+@header-background:  rgba(0,109,215,.98);
 // Images included with this plugin should go in this folder. please make sure you always put images inside /public/images
 @image-path: "/plugins/nodebb-theme-gamebasics/images/";
 
@@ -45,4 +23,86 @@
 @border-radius-md: 6px;
 
 @panel-background: rgba(2, 41, 82, 0.5);
+@panel-background-secondary: #337ab7;
 /* End custom OSM variables */
+
+
+/* Start Persona theme variables */
+
+/* End Persona theme variables */
+
+/* Start bootstrap variables */
+@text-color: #ffffff;
+@brand-primary:         #00a8ff;
+@headings-small-color:  @text-color;
+@body-bg:               transparent;
+@link-color:            @brand-primary;
+@link-hover-color:      @text-color;
+@link-hover-decoration: none;
+@state-info-text: @link-color;
+
+@well-bg: rgba(2, 41, 82, 0.5);
+@well-border: transparent;
+@breadcrumb-padding-vertical:   8px;
+@breadcrumb-padding-horizontal: 15px;
+@breadcrumb-bg:                 #f5f5f5;
+@breadcrumb-color:              #ccc;
+@breadcrumb-active-color:       @text-color;
+
+
+//
+//## Define colors for form feedback states and, by default, alerts.
+@state-success-text:             #3c763d;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                #31708f;
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             @text-color;
+@state-warning-bg:               @panel-background;
+@state-warning-border:           transparent;
+
+@state-danger-text:              #a94442;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+
+
+
+//== Panels
+//
+//##
+@panel-bg:                    @panel-background;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          transparent;
+@panel-footer-bg:             #f5f5f5;
+
+@panel-default-text:          @text-color;
+@panel-default-border:        transparent;
+@panel-default-heading-bg:    @header-background;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @brand-primary;
+@panel-primary-heading-bg:    @brand-primary;
+
+@panel-success-text:          @state-success-text;
+@panel-success-border:        @state-success-border;
+@panel-success-heading-bg:    @state-success-bg;
+
+@panel-info-text:             @state-info-text;
+@panel-info-border:           @state-info-border;
+@panel-info-heading-bg:       @state-info-bg;
+
+@panel-warning-text:          @state-warning-text;
+@panel-warning-border:        @state-warning-border;
+@panel-warning-heading-bg:    @state-warning-bg;
+
+@panel-danger-text:           @state-danger-text;
+@panel-danger-border:         @state-danger-border;
+@panel-danger-heading-bg:     @state-danger-bg;
+
+/* End bootstrap variables */
+

@@ -83,5 +83,3 @@
 		<!-- IMPORT partials/topic/post-menu.tpl -->
 	</small>
 </div>
-
-<hr />

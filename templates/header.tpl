@@ -38,6 +38,7 @@
 </head>
 
 <body class="{bodyClass} skin-{config.bootswatchSkin}">
+	<div id="background"></div>
 	<nav id="menu" class="hidden">
 		<section class="menu-profile">
 			<!-- IF user.uid -->

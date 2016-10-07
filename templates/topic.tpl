@@ -15,17 +15,16 @@
 
 		<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
 
-		<hr class="visible-xs" />
-
 		<ul component="topic" class="posts" data-tid="{tid}" data-cid="{cid}">
 			<!-- BEGIN posts -->
 				<li component="post" class="<!-- IF posts.deleted -->deleted<!-- ENDIF posts.deleted -->" <!-- IMPORT partials/data/topic.tpl -->>
-					<a component="post/anchor" data-index="{posts.index}" name="{posts.index}"></a>
+					<div class="post-content">
+						<a component="post/anchor" data-index="{posts.index}" name="{posts.index}"></a>
 
-					<meta itemprop="datePublished" content="{posts.timestampISO}">
-					<meta itemprop="dateModified" content="{posts.editedISO}">
-
-					<!-- IMPORT partials/topic/post.tpl -->
+						<meta itemprop="datePublished" content="{posts.timestampISO}">
+						<meta itemprop="dateModified" content="{posts.editedISO}">
+						<!-- IMPORT partials/topic/post.tpl -->
+					</div>
 					<!-- IF !posts.index -->
 					<div class="post-bar-placeholder"></div>
 					<!-- ENDIF !posts.index -->

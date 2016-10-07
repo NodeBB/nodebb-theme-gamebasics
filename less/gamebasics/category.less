@@ -14,7 +14,10 @@
 				}
 
 				h2 a {
-					
+					color: darken(@brand-primary, 5%);
+					&:hover {
+						color: @link-hover-color;
+					}
 				}
 			}
 
@@ -101,15 +104,15 @@
 
 .category, .categories, .subcategory {
 	> p {
-		color: @primary-text-color;
+		color: @text-color;
 	}
 
 	h2.title .description {
-		color: @primary-text-color;
+		color: @text-color;
 		font-size: @font-size-xs;
 	}
 }
 
 .categories-title {
-	color: @gray-light;
+	color: @text-color;
 }

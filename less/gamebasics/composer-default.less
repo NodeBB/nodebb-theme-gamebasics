@@ -1,0 +1,30 @@
+.composer {
+    .write {
+        color: @gray;
+    }
+
+    .preview-container {
+        background-image: url("@{image-path}/background_sm.jpg");
+        padding: 15px;
+        background-size: 100% 100%;
+        .preview {
+            overflow-y: auto;
+
+            p {
+                margin: 0 0 18px;
+            }
+            
+            blockquote {
+                font-size: 12px;
+                
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .help-text {
+            color: @text-color !important;
+        }
+    }
+}

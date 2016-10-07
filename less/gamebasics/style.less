@@ -1,10 +1,15 @@
-body {
+#background {
     background-image: url("@{image-path}/background_xs.jpg");
-	position: fixed;
     background-size: cover;
-    background-position: center bottom;
-    width: 100%;
-    overflow: hidden;
+    background-position: bottom;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
 
     @media (min-width: 768px)
 	{
@@ -15,6 +20,51 @@ body {
 	{
         background-image: url("@{image-path}/background.jpg");
 	}
-
-
 }
+
+.no-padding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+#panel.slideout-panel {
+    min-height: auto; // There is a bug in the original style for this element where it would always show a scrollbar if i dont set this to auto.
+    position: relative;
+}
+a.permalink {
+	&,
+	&:focus,
+	&:active {
+		color: @link-color;
+        font-weight: bold;
+        text-decoration: none;
+	}
+    &:hover {   
+        text-decoration: none;
+        color: @link-hover-color;
+    }
+}
+.plugin-mentions-a {
+   &,
+	&:focus,
+	&:active {
+		color: @link-color !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+	}
+    &:hover {   
+        text-decoration: none !important;
+        color: @link-hover-color !important;
+    }
+}
+
+// Basic style for all hr elements
+hr {
+    border-color: @panel-background;
+    border-width: 2px;
+}
+
+// Basic style for all panels 
+.panel {
+    border: none;
+}
+
