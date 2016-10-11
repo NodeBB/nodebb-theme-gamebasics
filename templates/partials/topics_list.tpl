@@ -104,7 +104,7 @@
 		</div>
 
 		<div class="col-md-3 col-sm-3 hidden-xs no-padding stats" component="topic/teaser">
-			<div class="panel-container">
+			<div class="panel-container full-height-panel">
 			
 				<div class="card" style="border-color: {topics.category.bgColor}">
 					<!-- IF topics.unreplied -->
