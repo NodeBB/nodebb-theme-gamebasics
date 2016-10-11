@@ -26,6 +26,28 @@
    padding: 0 !important;
    margin: 0 !important;
 }
+
+.panel-container {
+	background: @panel-background;
+	padding: @block-padding;
+	margin-right: 10px;
+}
+
+.center-text-container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.center-text {
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+} 
+.full-height-panel {
+    height: 100%;
+}
+
 #panel.slideout-panel {
     min-height: auto; // There is a bug in the original style for this element where it would always show a scrollbar if i dont set this to auto.
     position: relative;

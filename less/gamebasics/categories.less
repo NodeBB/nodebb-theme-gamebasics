@@ -1,10 +1,10 @@
-@block-padding: 10px;
-@block-height: 75px;
+@block-padding: 15px;
 
 .categories, .category > ul {
 
 	> li {
-
+		width: 100%;
+		display:flex;
 		@media (max-width: @screen-xs-max) {
 			
 			&:last-child {
@@ -12,13 +12,16 @@
 			};
 		}
 
-		min-height: 53px;
+		.teaser {
+			color: @text-color;
+		}
 
 		.content {
-            
-            padding: @block-padding;
-            background: @panel-background;
-			height: @block-height;
+			/*
+			This is equivalent to flex: 0 0 auto. It sizes the item according to its width/height properties, but makes it fully inflexible.
+			*/
+			flex: none;
+			vertical-align: top;
 
 			.icon {
 		
@@ -135,23 +138,17 @@
 
 
 .stats {
-	margin-top: 0px;
-	background: @panel-background;
-	height: @block-height;
-	margin-left: @gap-sm;
-	padding-top: @block-padding;
+	flex: none;
+
+	vertical-align: middle;
 	small {
 		color: @text-color;
 	}
 	span {
 		color: @text-color;
 	}
+	.stats-container {
+	}
 }
 
-.teaser {
-	background: @panel-background;
-	height: @block-height;
-	margin-left: @gap-sm;
-	padding: @block-padding;
-	color: @text-color;
-}
+
