@@ -12,9 +12,11 @@
 					
 				}
 			}
-
+			&:hover {
+				background-color: @dropdown-menu-hover;
+			}
 			&.unread {
-				
+				background-color: @dropdown-menu-hover;
 
 				.mark-read:after {
 					
@@ -50,7 +52,7 @@
 		
 
 			&:hover {
-			
+				background-color: @dropdown-menu-hover;
 			}
 
 			&:not(:last-child) {
@@ -62,7 +64,15 @@
 			}
 
 			a {
-			
+				&,
+				&:focus,
+				&:active {
+					color: @text-secondary;
+					font-weight: bold;
+				}
+				&:hover {   
+					color: @text-secondary;
+				}
 			}
 
 			.members {
@@ -79,11 +89,12 @@
 .header {
 	background-color: @header-background;
 	border: none;
-	.navbar-brand {
-		color: @text-color;
-	}
 
 	.navbar-nav {
+		.dropdown-menu {
+			.border-radius(0px 0px 5px 5px);
+
+		}
 		 > li {
 		 	> a {
 				 color: @text-color;
@@ -101,11 +112,23 @@
 
 
 	.navbar-toggle {
+		border: none;
+		background: @link-color;
 		.notification-icon {
-		
+			
 			&:before {
 			
 			}
+		}
+		
+		&:hover {
+			background: lighten(@link-color, 10%);
+		}
+		&:focus {
+			background: @link-color;
+		}
+		.icon-bar {
+			background-color: #fff;
 		}
 	}
 
@@ -122,7 +145,10 @@
 	}
 
 	.forum-title {
-		
+		background: url("@{image-path}/logo_forum.png") no-repeat;
+		width: 145px;
+		margin-top: -3px;
+		margin-left: 0px !important;
 	}
 
 	.forum-logo {
@@ -132,6 +158,9 @@
 	@media (max-width: @screen-xs-max) {
 		.forum-logo {
 			
+		}
+		.forum-title {
+			margin-left: 15px !important;
 		}
 	}
 
@@ -178,10 +207,12 @@
 
 	.notif-dropdown-link {
 		// margin-top: 1em;
-		
+		border-color: #f5f5f5;
 
 		a {
-		
+			&:hover {
+				background-color: @dropdown-menu-hover;
+			}
 		}
 	}
 

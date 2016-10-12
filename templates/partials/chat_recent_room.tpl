@@ -1,4 +1,4 @@
-<li component="chat/recent/room" data-roomid="{rooms.roomId}" class="<!-- IF rooms.unread -->unread<!-- ENDIF rooms.unread -->">
+<li component="chat/recent/room" data-roomid="{rooms.roomId}" class="clearfix <!-- IF rooms.unread -->unread<!-- ENDIF rooms.unread -->">
 	<i class="fa fa-times pull-right leave" component="chat/leave"></i>
 	<div>
 		<p>{rooms.roomName}</p>

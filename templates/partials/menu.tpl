@@ -11,7 +11,7 @@
 				</a>
 				<!-- IF config.showSiteTitle -->
 				<a href="{relative_path}/">
-					<h1 class="navbar-brand forum-title">{title}</h1>
+					<div class="navbar-brand forum-title"></div>
 				</a>
 				<!-- ENDIF config.showSiteTitle -->
 

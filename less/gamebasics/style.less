@@ -65,6 +65,8 @@ a.permalink {
         color: @link-hover-color;
     }
 }
+
+
 .plugin-mentions-a {
    &,
 	&:focus,
@@ -89,4 +91,50 @@ hr {
 .panel {
     border: none;
 }
+
+.form-control {
+    border: none;
+}
+
+
+.btn-primary {
+    font-weight: 400;
+    border: none;
+    &:hover {
+        background: @brand-primary;
+    }
+}
+
+// We want buttons inside the layout to be a different style
+.container {
+    .btn-group {
+
+        .open {
+            >.dropdown-toggle {
+                
+                &.btn-default {
+                    background: transparent;
+                    color: @text-color;
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .btn-default {
+            & {
+                background: transparent;
+                color: @text-color;
+                border: none;
+                box-shadow: none;
+            }
+            &:hover, &:active, &:focus {
+                background: transparent;
+                color: @link-color;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
 
