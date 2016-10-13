@@ -1,104 +1,12 @@
 .topic {
-	h1 {
-		
-
-		.topic-title {
-			
-		}
-
-		> span {
-		
-
-			> span {
-				
-			}
-		}
-
-		.topic-title {
-			
-		}
-	}
-
-	.posts {
-		h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
-			
-		}
-
-		h1 {
-			
-		}
-
-		h2 {
-			
-		}
-
-		h3 {
-			
-		}
-
-		h4 {
-		
-		}
-
-		h5 {
-			
-		}
-
-		h4, h5, h6 {
-			
-		}
-
-
-		.icon {
-		
-
-
-			> a > .status {
-			
-				@media (min-width: @screen-md-min) {
-				
-				}
-			}
-
-			img, .user-icon {
-				
-			}
-		}
-
-		.status {
-	
-		}
-
-		.group-label {
-	
-		}
-	}
-
-	.bookmarked {
-	
-	}
-
-	[component="post/header"] {
-		.fa {
-			
-		}
-	}
-
 	[component="post/anchor"] {
         color: @text-color;
 	}
 
 	[component="post/upvote"], [component="post/downvote"] {
         color: @text-color;
-
-        	&:focus {
-            
-        	}
 	}
 
-	[component="post/upvote"].upvoted, [component="post/downvote"].downvoted {
-		
-	}
 
 	[component="post/parent"] {
        border: none;
@@ -115,139 +23,30 @@
         font-size: 13px;
 	}
 
-	.title {
-		p {
-			
-		}
-
-		small {
-            color: @text-color;
-
-			strong {
-			
-			}
-		}
-	}
-
-	.content {
-	
-	}
-
-	.post-tools {
-		
-
-		a {
-		
-		}
-	}
-
 	.moderator-tools {
-	
-
 		> a {
             color: @text-color;
 		}
-
-		a {
-			
-
-			&[role="menuitem"] {
-			
-			}
-		}
-
-		// temporary until we build component toggling
-		.favourite.btn-warning, .follow.btn-success {
-		
-			
-			&:hover {
-				
-			}
-		}
 	}
 
-	.tags {
-	
-	}
-
-	h1 {
-		.btn-group, .btn {
-			
-		}
-
-		.btn {
-
-		}
-	}
-
-	.post-signature {
-	
-	}
-
-	@media (max-width: @screen-sm-max) {
-		.content {
-			
-		}
-
-		.post-signature {
-		
-		}
-
-		.posts .icon {
-			
-
-			img, .user-icon {
-				
-			}
-		}
-	}
 }
 
 
 .topic {
 	&.deleted {
 		.opacity(0.3);
-
-		.votes {
-			
-		}
 	}
 
 	.posts {
-	
-
 		> li {
             .post-content {
                 background:  @panel-background;
                 padding: 10px;
                 margin-bottom: 10px;
             }
-                margin-bottom: @gap-sm;
-			.edit-icon {
-				
-			}
-
-			&.deleted {
-				.content {
-					
-				}
-
-				.votes {
-					
-				}
-			}
-
-			> hr {
-				
-			}
-
-			&.highlight > hr {
+            margin-bottom: @gap-sm;
 			
-			}
-
-			&.highlight .bookmarked {
-				
-			}
+		
             .moderator-tools {
                 .dropdown-menu {
                     background: @panel-background-secondary;
@@ -263,123 +62,7 @@
                     }
                 }
             }
-
-		}
-         
-		.content {
-			.fix-lists;
-
-			blockquote {
-			
-			}
-
-			> blockquote {
-				> blockquote {
-					> *:not(.blockquote) {
-						
-					}
-				}
-
-				> blockquote.uncollapsed {
-					> *:not(.blockquote) {
-							
-					}
-				}
-			}
-
-			iframe, .img-responsive {
-			
-			}
-
-			.toggle {
-			
-			}
-
-			pre {
-			
-
-				code {
-				
-				}
-			}
-
-			@media (max-width: @screen-sm-min) {
-				pre {
-			
-				}
-			}
-		}
-	}
-
-	.pagination-block {
-
-
-		&.ready {
-
-		}
-
-		.wrapper {
-
-		}
-		.progress-bar {
-		}
-	}
-}
-
-.thread_active_users {
-
-
-	a[data-uid] {
-
-
-		img, .user-icon {
-
-		}
-
-		&::after {
-
-		}
-
-		&.replying::after {
-
-		}
-	}
-
-	.anonymous-box {
-
-	}
-}
-
-.fork-thread-card {
-
-}
-
-@media screen and (min-width: @screen-sm-min) {
-	.fork-thread-card {
-
-	}
-}
-
-[component="post"] {
-	
-	[component="user/picture"], [component="user/status"] {
-
-	}
-	
-	.icon:before {
-
-	}
-	
-	&.bg-success {
-
-		
-		.icon:before {
-
-		}
-		
-		[component="user/picture"], [component="user/status"] {
-
-		}
+		}  
 	}
 }
 

@@ -1,46 +1,12 @@
 #menu, .header {
 	.notification-list {
-		
-
+	
 		li {
-		
-
-			a {
-				
-
-				.text {
-					
-				}
-			}
 			&:hover {
 				background-color: @dropdown-menu-hover;
 			}
 			&.unread {
 				background-color: @dropdown-menu-hover;
-
-				.mark-read:after {
-					
-				}
-
-				.mark-read:hover:after {
-					
-				}
-			}
-
-			.mark-read {
-			
-
-				&:after {
-				
-				}
-
-				&:hover {
-				
-
-					&:after {
-						
-					}
-				}
 			}
 		}
 	}
@@ -49,18 +15,8 @@
 		.notification-list;
 
 		> li {
-		
-
 			&:hover {
 				background-color: @dropdown-menu-hover;
-			}
-
-			&:not(:last-child) {
-				
-			}
-
-			&.no_active a {
-			
 			}
 
 			a {
@@ -72,14 +28,6 @@
 				}
 				&:hover {   
 					color: @text-secondary;
-				}
-			}
-
-			.members {
-				
-
-				li {
-				
 				}
 			}
 		}
@@ -103,23 +51,12 @@
 				 }
 			}
 		}
-
-	}
-
-	[component="navbar/title"] {
-		
 	}
 
 
 	.navbar-toggle {
 		border: none;
 		background: @link-color;
-		.notification-icon {
-			
-			&:before {
-			
-			}
-		}
 		
 		&:hover {
 			background: lighten(@link-color, 10%);
@@ -132,18 +69,6 @@
 		}
 	}
 
-	#user_dropdown {
-		
-
-		img, .user-icon {
-		
-
-			span {
-				
-			}
-		}
-	}
-
 	.forum-title {
 		background: url("@{image-path}/logo_forum.png") no-repeat;
 		width: 145px;
@@ -151,31 +76,14 @@
 		margin-left: 0px !important;
 	}
 
-	.forum-logo {
-		
-	}
-
 	@media (max-width: @screen-xs-max) {
-		.forum-logo {
-			
-		}
+
 		.forum-title {
 			margin-left: 15px !important;
 		}
 	}
 
-	.header-topic-title {
-
-		span {
-
-		}
-	}
-
 	.pagination-block {
-
-		&.ready {
-		
-		}
 
 		.progress-container {
 			background: #fff;
@@ -184,20 +92,6 @@
 				background: @brand-primary;
 			}
 		}
-
-		.dropdown-toggle {
-		
-		}
-
-		.open>a {
-		
-		}
-
-
-		.dropdown-menu {
-			
-		}
-
 		@media (max-width: @screen-xs-max) {
 			.progress-container {
 			
@@ -215,91 +109,12 @@
 			}
 		}
 	}
-
-	#search-form {
-		.advanced-search-link {
-			
-		}
-	}
 }
 
 .breadcrumb {
-	li {
-	
-	}
 
 	.fa {
 		color: @text-color;
 	}
 
-
-
-	@media (max-width: @screen-sm-max) {
-		li {
-		
-		}
-
-		li:nth-last-child(2), li:nth-last-child(1), li:last-child {
-			
-		}
-
-		li:nth-last-child(2):before {
-		
-		}
-	}
-}
-
-#reconnect {
-
-
-	&.active {
-		
-	}
-
-	& +div.tooltip .tooltip-inner {
-		
-	}
-}
-
-.unread-count:after {
-
-}
-
-#mobile-menu [component="notifications/icon"].unread-count:after, .slideout-menu .unread-count:after {
-
-}
-
-#search-form {
-	#search-button {
-
-	}
-	#search-button.hidden {
-
-	}
-	#search-fields {
-
-
-		&.hidden {
-			
-		}
-
-		input.form-control {
-		
-		}
-
-		.form-group .advanced-search-link {
-		
-		}
-	}
-}
-
-body.skin-default .header {
-	.notification-list {
-
-		li {
-			a {
-			
-			}
-		}
-	}
 }
