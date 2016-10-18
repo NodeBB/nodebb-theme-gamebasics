@@ -65,6 +65,11 @@ a.permalink {
         color: @link-hover-color;
     }
 }
+.form-group {
+    a {
+        color: @text-secondary;
+    }
+}
 
 
 .plugin-mentions-a {
@@ -92,8 +97,10 @@ hr {
     border: none;
 }
 
+// Basic style for all inputs
 .form-control {
     border: none;
+    border-radius: 0;
 }
 
 
@@ -107,6 +114,17 @@ hr {
 
 // We want buttons inside the layout to be a different style
 .container {
+
+ .btn-default {
+        & {
+           background: @brand-primary;
+            color: @text-color;
+        }
+        &:hover, &:active, &:focus {
+            color: @text-color;
+        }
+    }
+    // Buttons inside button groups will ahve different stylings.
     .btn-group {
 
         .open {
@@ -135,6 +153,7 @@ hr {
             }
         }
     }
+   
 }
 
 

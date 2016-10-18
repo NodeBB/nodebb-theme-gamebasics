@@ -34,21 +34,52 @@
 	}
 }
 
+@menubg-active: #1c7ae0 !important;
+@menubg-text-active: #fff !important;
+
 .header {
 	background-color: @header-background;
 	border: none;
 
 	.navbar-nav {
+		margin-left: 20px;
 		.dropdown-menu {
 			.border-radius(0px 0px 5px 5px);
-
 		}
 		 > li {
 		 	> a {
 				 color: @text-color;
+				 padding: 15px 9px;
 				 &:hover {
 					 color: darken(@text-color, 10%);
 				 }
+				 &:active {
+					 background-color: @menubg-active;
+					 color: @menubg-text-active;
+				 }
+			}
+			&.active {
+				> a {
+					background-color: @menubg-active;
+					color: @menubg-text-active;
+				}
+			}
+		}
+		.btn {
+			&:hover {
+				background-color: transparent;
+			}
+			&:active {
+				background-color: @menubg-active;
+			}
+		}
+		>.open {
+			> a {
+				&,
+				&:focus,
+				&:active {
+				color: @text-color;
+				}
 			}
 		}
 	}

@@ -1,9 +1,21 @@
 .account {
 	> .row {
 		background: @panel-background;
+		padding: 15px;
+		&.account-top-padding {
+			padding-top: 60px;
+		}
+		&.hidden {
+			padding: 0px !important;
+		}
 	}
 
-
+	h1 {
+		font-size: 22px;
+	}
+	#groups-list {
+		margin-top: 15px;
+	}
 	.profile {
 		padding-bottom: 10px;
 		.profile-meta {
@@ -11,6 +23,9 @@
 			strong {
 				color: darken(@text-color, 15%);
 			}
+		}
+		.fullname {
+			color: @link-color;
 		}
 
 		.account-stats {

@@ -4,6 +4,7 @@
 	> li {
 		width: 100%;
 		display:flex;
+		margin: 0px;
 		@media (max-width: @screen-xs-max) {
 			border:none;
 			&:last-child {
@@ -22,11 +23,27 @@
 			*/
 			flex: none;
 			vertical-align: top;
+			h2.title {
+				.description {
+					line-height: 17px;
+				}
+			}
 		}
 
 
 		.card {
 			height: 100%;
+		}
+		.category-text-container {
+			max-height: 60px;
+			overflow: hidden;
+		}
+		> div {
+			&:not(.hidden-xs):not(.hidden-sm):last-child {
+				.panel-container {
+					margin-right: 0px;
+				}
+			}
 		}
 	}
 }

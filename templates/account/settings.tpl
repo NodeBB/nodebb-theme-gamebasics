@@ -1,7 +1,7 @@
 <div class="account">
 	<!-- IMPORT partials/account/header.tpl -->
 
-	<div class="row">
+	<div class="row account-top-padding">
 		<div class="col-xs-12 col-md-6">
 			<!-- IF !disableCustomUserSkins -->
 			<h4>[[user:select-skin]]</h4>
@@ -204,9 +204,12 @@
 				</div>
 			</div>
 		</div>
+		<div class="col-xs-12">
+			<div class="form-actions pull-left">
+				<a id="submitBtn" href="#" class="btn btn-primary">[[global:save_changes]]</a>
+			</div>
+		</div>
 	</div>
-	<div class="form-actions">
-		<a id="submitBtn" href="#" class="btn btn-primary">[[global:save_changes]]</a>
-	</div>
+
 </div>
 

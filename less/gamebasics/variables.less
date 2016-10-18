@@ -1,38 +1,13 @@
-/* Start custom OSM variables */
+/* These variables are added manually for common style settings */
 @header-background:  rgba(0,109,215,.98);
 @text-secondary: #333; // Used for texts on a white background.
-
 @dropdown-menu-hover: #f5f5f5;
+@panel-background: rgba(2, 41, 82, 0.5);
+@panel-background-secondary: #337ab7;
+
 // Images included with this plugin should go in this folder. please make sure you always put images inside /public/images
 @image-path: "/plugins/nodebb-theme-gamebasics/images/";
 
-// The variables below are taken directly from the osm solution variables.less.
-@font-size-xxs: 11px;
-@font-size-xs: 13px;
-@font-size-sm: 15px;
-@font-size-md: 18px;
-@font-size-lg: 20px;
-@font-size-xl: 24px;
-@font-size-xxl: 34px;
-@font-size-xxxl: 55px;
-
-@gap-xs: 3px;
-@gap-sm: 10px;
-@gap-md: 20px;
-@gap-lg: 30px;
-
-@border-radius-xs: 0;
-@border-radius-sm: 4px;
-@border-radius-md: 6px;
-
-@panel-background: rgba(2, 41, 82, 0.5);
-@panel-background-secondary: #337ab7;
-/* End custom OSM variables */
-
-
-/* Start Persona theme variables */
-
-/* End Persona theme variables */
 
 /* Start bootstrap variables */
 @text-color: #ffffff;
@@ -48,29 +23,21 @@
 @well-border: transparent;
 @breadcrumb-padding-vertical:   8px;
 @breadcrumb-padding-horizontal: 15px;
-@breadcrumb-bg:                 #f5f5f5;
-@breadcrumb-color:              #ccc;
 @breadcrumb-active-color:       @text-color;
 
+@navbar-default-color:             @text-color;
+@navbar-default-bg:                transparent;
+@navbar-default-link-color:        @text-color;
+@navbar-default-link-hover-color:   darken(@text-color, 10%);
+
+@table-bg-accent: @panel-background;
+@table-bg-hover: darken(@panel-background, 10%);
 
 
 //## Define colors for form feedback states and, by default, alerts.
-@state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
-@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
-
-@state-info-text:                #31708f;
-@state-info-bg:                  #d9edf7;
-@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
-
 @state-warning-text:             @text-color;
 @state-warning-bg:               @panel-background;
 @state-warning-border:           transparent;
-
-@state-danger-text:              #a94442;
-@state-danger-bg:                #f2dede;
-@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
-
 
 
 //== Panels
@@ -91,21 +58,12 @@
 @panel-primary-border:        @brand-primary;
 @panel-primary-heading-bg:    @brand-primary;
 
-@panel-success-text:          @state-success-text;
-@panel-success-border:        @state-success-border;
-@panel-success-heading-bg:    @state-success-bg;
 
-@panel-info-text:             @state-info-text;
-@panel-info-border:           @state-info-border;
-@panel-info-heading-bg:       @state-info-bg;
-
-@panel-warning-text:          @state-warning-text;
-@panel-warning-border:        @state-warning-border;
-@panel-warning-heading-bg:    @state-warning-bg;
-
-@panel-danger-text:           @state-danger-text;
-@panel-danger-border:         @state-danger-border;
-@panel-danger-heading-bg:     @state-danger-bg;
-
+// == Buttons
+//
+//##
+@btn-info-color:                 @text-color;
+@btn-info-bg:                    @brand-primary;
+@btn-info-border:                transparent;
 /* End bootstrap variables */
 

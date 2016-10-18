@@ -3,26 +3,28 @@
  
 	<div class="col-md-7 col-sm-9 col-xs-12 content no-padding">
 		<div class="panel-container full-height-panel">
-			<div class="icon pull-left" style="{function.generateCategoryBackground}">
-				<i class="fa fa-fw {../icon}"></i>
-			</div>
-
-			<h2 class="title">
-				<!-- IMPORT partials/categories/link.tpl --><br/>
-				<!-- IF ../descriptionParsed -->
-				<div class="description">
-					{../descriptionParsed}
+			<div class="category-text-container">
+				<div class="icon pull-left" style="{function.generateCategoryBackground}">
+					<i class="fa fa-fw {../icon}"></i>
 				</div>
-				<!-- ENDIF ../descriptionParsed -->
-				<!-- IF !config.hideSubCategories -->
-				{function.generateChildrenCategories}
-				<!-- ENDIF !config.hideSubCategories -->
-			</h2>
-			<span class="visible-xs pull-right">
-				<a class="permalink" href="{../teaser.url}">
-					<small class="timeago" title="{../teaser.timestampISO}"></small>
-				</a>
-			</span>
+
+				<h2 class="title">
+					<!-- IMPORT partials/categories/link.tpl --><br/>
+					<!-- IF ../descriptionParsed -->
+					<div class="description">
+						{../descriptionParsed}
+					</div>
+					<!-- ENDIF ../descriptionParsed -->
+					<!-- IF !config.hideSubCategories -->
+					{function.generateChildrenCategories}
+					<!-- ENDIF !config.hideSubCategories -->
+				</h2>
+				<span class="visible-xs pull-right">
+					<a class="permalink" href="{../teaser.url}">
+						<small class="timeago" title="{../teaser.timestampISO}"></small>
+					</a>
+				</span>
+			</div>
 		</div>
 	</div>
 
@@ -52,7 +54,9 @@
 	<!-- IF !config.hideCategoryLastPost -->
 	<div class="col-md-3 col-sm-3 hidden-xs stats no-padding" component="topic/teaser">
 		<div class="panel-container full-height-panel">
-			<!-- IMPORT partials/categories/lastpost.tpl -->
+			<div class="category-text-container">
+				<!-- IMPORT partials/categories/lastpost.tpl -->
+			</div>
 		</div>
 	</div>
 	<!-- ENDIF !config.hideCategoryLastPost -->
