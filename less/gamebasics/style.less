@@ -65,12 +65,6 @@ a.permalink {
         color: @link-hover-color;
     }
 }
-.form-group {
-    a {
-        color: @text-secondary;
-    }
-}
-
 
 .plugin-mentions-a {
    &,
@@ -156,5 +150,24 @@ hr {
     }
    
 }
+
+ .composer-container {
+  // Buttons inside button groups will have different stylings.
+    .btn-group {
+
+        .composer-discard {
+            & {
+                background: @brand-danger;
+                color: @text-color;
+                border: none;
+                box-shadow: none;
+            }
+            &:hover, &:active, &:focus {
+                background: darken(@brand-danger, 10%)
+            }
+        }
+    }
+ }
+
 
 

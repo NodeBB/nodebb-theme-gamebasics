@@ -27,3 +27,43 @@
     }
   }
 }
+
+.nav {
+  > li {
+    > a {
+      &:hover {
+        background: darken(@brand-primary, 10%);
+      }
+    }
+  }
+
+}
+
+// Nav-tabs
+// -------------------------
+ // Give the tabs something to sit on
+.nav-tabs {
+  border-bottom: none;
+  > li {
+
+
+    // Actual tabs (as links)
+    > a {
+        border: none;
+        background: @brand-primary;
+        color: @text-color;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+    
+        color: #fff;
+        background-color: darken(@brand-primary, 10%);
+        cursor: default;
+      }
+    }
+  }
+}

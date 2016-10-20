@@ -3,3 +3,21 @@
 .modal-header {
   background: @header-background;
 }
+
+
+.modal-body {
+  color: @text-secondary;
+  a {
+    &,
+    &:focus,
+    &:active {
+      color: @link-color;
+    }
+    &:hover {   
+        color: @text-secondary;
+    }
+  }
+  .well {
+    background: transparent;
+  }
+}
