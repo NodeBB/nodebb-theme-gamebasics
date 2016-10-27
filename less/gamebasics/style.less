@@ -1,16 +1,8 @@
-#background {
+#panel {
     background-image: url("@{image-path}/background_xs.jpg");
     background-size: cover;
     background-position: bottom;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
     background-repeat: no-repeat;
-    margin: 0px;
-    padding: 0px;
-
     @media (min-width: 768px)
 	{
         background-image: url("@{image-path}/background_sm.jpg");
@@ -20,6 +12,30 @@
 	{
         background-image: url("@{image-path}/background.jpg");
 	}
+}
+
+body {
+	@media (min-width: 979px)
+	{
+		padding-top: 0px;
+	}
+
+	@media (max-width: 979px)
+	{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+
+#content {
+	@media (min-width: @screen-lg)
+	{
+		padding-top: 70px;
+	}
+
+
+
+	min-height: 100%;
 }
 
 .no-padding {
@@ -42,16 +58,14 @@
 .center-text {
     vertical-align: middle;
     text-align: center;
+    
     display: table-cell;
 } 
 .full-height-panel {
     height: 100%;
 }
 
-#panel.slideout-panel {
-    min-height: auto; // There is a bug in the original style for this element where it would always show a scrollbar if i dont set this to auto.
-    position: relative;
-}
+
 a.permalink {
 	&,
 	&:focus,
