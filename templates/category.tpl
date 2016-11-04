@@ -1,7 +1,7 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 <div widget-area="header"></div>
 <div class="row">
-	<div class="category col-lg-9 col-sm-12" no-widget-class="category col-lg-12 col-sm-12" no-widget-target="sidebar">
+	<div class="category col-sm-12" no-widget-class="category col-lg-12 col-sm-12" no-widget-target="sidebar">
 		<!-- IMPORT partials/category/subcategory.tpl -->
 
 		<!-- IF children.length --><hr class="hidden-xs"/><!-- ENDIF children.length -->
