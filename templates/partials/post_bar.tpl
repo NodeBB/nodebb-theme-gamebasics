@@ -26,6 +26,8 @@
 
 		<!-- IMPORT partials/topic/sort.tpl -->
 
+		<div class="pull-right">&nbsp;
 		<!-- IMPORT partials/thread_tools.tpl -->
+		</div>
 	</div>
 </div>

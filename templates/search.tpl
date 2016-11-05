@@ -114,19 +114,25 @@
 
 						<div class="form-group post-search-item">
 							<label>[[search:show-results-as]]</label>
-							<div class="btn-group" data-toggle="buttons" id="show-results-as">
-								<label class="btn btn-primary active">
-									<input type="radio" name="options" id="show-as-posts" autocomplete="off" checked> [[global:posts]]
+							<div class="radio">
+								<label>
+									<input type="radio" name="options" id="show-as-posts" checked>
+									[[global:posts]]
 								</label>
-								<label class="btn btn-primary">
-									<input type="radio" name="options" id="show-as-topics" autocomplete="off"> [[global:topics]]
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="options" id="show-as-topics">
+									[[global:topics]]
 								</label>
 							</div>
 						</div>
 
-
-						<a id="save-preferences" href="#">[[search:save-preferences]]</a>
-						<a id="clear-preferences" href="#">[[search:clear-preferences]]</a>
+						<div class="btn-group">
+							<button type="submit" class="btn btn-primary">[[global:search]]</button>
+							<a class="btn btn-default" id="save-preferences" href="#">[[search:save-preferences]]</a>
+							<a class="btn btn-default" id="clear-preferences" href="#">[[search:clear-preferences]]</a>
+						</div>
 					</div>
 				</div>
 			</form>
@@ -147,7 +153,7 @@
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-body">
 
-					<a href="{config.relative_path}/topic/{posts.topic.slug}/{posts.index}" class="search-result-text">
+					<a href="{config.relative_path}/post/{posts.pid}" class="search-result-text">
 						<h4>{posts.topic.title}</h4>
 					</a>
 					<!-- IF showAsPosts -->

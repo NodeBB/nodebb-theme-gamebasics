@@ -1,7 +1,7 @@
 <li component="categories/category" data-cid="{../cid}" data-numRecentReplies="1" class="row clearfix">
 	<meta itemprop="name" content="{../name}">
  
-	<div class="col-md-7 col-sm-9 col-xs-12 content no-padding">
+	<div class="no-padding content col-xs-12 <!-- IF config.hideCategoryLastPost -->col-md-10 col-sm-12<!-- ELSE -->col-md-7 col-sm-9<!-- ENDIF config.hideCategoryLastPost -->">
 		<div class="panel-container full-height-panel">
 			<div class="category-text-container">
 				<div class="icon pull-left" style="{function.generateCategoryBackground}">
