@@ -182,5 +182,25 @@ hr {
     }
  }
 
+     // The buttons for the post navigation.
+    .pagination-container {
+       .pagination {
+           > li {
+               > a {
+                   &:hover {
+                       color: @link-color;
+                   }
+               }
+               &.active {
+                   > a {
+                       &:hover {
+                           color: #fff;
+                       }
+                   }
+               }
+           }
+       }
+    }
+
 
 

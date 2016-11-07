@@ -70,24 +70,23 @@
             background: @brand-primary;
 		}
 	}
-    // The buttons for the post navigation.
-    .pagination-container {
-       .pagination {
-           > li {
-               > a {
-                   &:hover {
-                       color: @link-color;
-                   }
-               }
-               &.active {
-                   > a {
-                       &:hover {
-                           color: #fff;
-                       }
-                   }
-               }
-           }
-       }
+}
+
+.tags {
+    .tag-item {
+        background: @panel-background;
+        padding: 5px;
+        &,
+        &:focus,
+        &:active {
+            color: @text-color;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        &:hover {   
+            text-decoration: none;
+            color: @link-hover-color;
+        }
     }
 }
 

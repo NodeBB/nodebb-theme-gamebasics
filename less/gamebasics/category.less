@@ -2,10 +2,11 @@
 
 	> ul {
 		> li {
-			&:not(.unread) {
+			.category-text-container {
 				h2.title { 
 					> a {
 						color: @text-color;
+						font-weight: 500;
 						&:hover {
 							color: @brand-primary;
 						}
@@ -22,6 +23,20 @@
 
 								color: @link-hover-color;
 							}
+						}
+					}
+					.tag-list {
+						a {
+							color: #333;
+						}
+					}
+				}
+			}
+			&:not(.unread) {
+				.category-text-container {
+					h2.title {
+						> a {
+							font-weight: 200;
 						}
 					}
 				}
