@@ -1,6 +1,12 @@
 @block-padding: 15px;
 .categories, .category > ul {
-
+	
+    [component="topic/pinned"] {
+        color: chartreuse;
+	}
+	[component="topic/locked"] {
+        color: red
+	}
 	> li {
 		width: 100%;
 		display:flex;
