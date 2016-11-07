@@ -41,8 +41,16 @@
 			overflow: hidden;
 		}
 		.category-text-container {
-		
-			overflow: hidden;
+			h2 {
+				&.title {
+					a {
+							color: @text-color;
+					&:hover {
+						color: @brand-primary;
+					}
+					}
+				}
+			}
 		}
 		.content {
 	
@@ -54,9 +62,13 @@
 .stats {
 	flex: none;
 	vertical-align: middle;
-	
+	.full-height-panel {
+		padding: 0px;
+	}
 	small {
 		color: @text-color;
+		text-transform: none;
+		
 	}
 	span {
 		color: @text-color;

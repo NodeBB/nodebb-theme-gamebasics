@@ -3,11 +3,26 @@
 	> ul {
 		> li {
 			&:not(.unread) {
+				h2.title { 
+					> a {
+						color: @text-color;
+						&:hover {
+							color: @brand-primary;
+						}
+					}
+					small {
+						a {
+							&,
+							&:focus,
+							&:active {
+								color: @link-color;
+								text-decoration: none;
+							}
+							&:hover {   
 
-				h2 a {
-					color: darken(@brand-primary, 5%);
-					&:hover {
-						color: @link-hover-color;
+								color: @link-hover-color;
+							}
+						}
 					}
 				}
 			}
