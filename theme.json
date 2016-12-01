@@ -1,7 +1,7 @@
 {
     "id": "nodebb-theme-gamebasics",
     "name": "Gamebasics",
-    "description": "The default theme for NodeBB. Uses a standard approach to forum design.",
+    "description": "The Gamebasics custom theme for NodeBB",
     "url": "https://github.com/GamebasicsBV/nodebb-theme-gamebasics",
     "screenshot": "screenshot.png"
 }

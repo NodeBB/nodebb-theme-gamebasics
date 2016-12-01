@@ -304,7 +304,7 @@
 
 //
 
-.account-picture-block{
+.account-picture-block {
 	vertical-align:top;
 	margin-bottom:20px;
 
@@ -314,6 +314,12 @@
 
 	.dropdown-toggle {
 		cursor: pointer;
+	}
+
+	// NodeBB does not have an option to hide this button. Only to disallow custom uploads.
+	// We hide the button here instead of creating a new plugin to do this in code, because that's a lot of work for little gain.
+	#changePictureBtn {
+		display: none;
 	}
 }
 
