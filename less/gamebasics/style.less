@@ -1,19 +1,6 @@
 #panel {
-    background-image: url("@{image-path}/background_xs.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
+    background: #eee;
     min-height: 100vh;
-    @media (min-width: 768px)
-	{
-        background-image: url("@{image-path}/background_sm.jpg");
-	}
-
-	@media (min-width: 1200px)
-	{
-        background-image: url("@{image-path}/background.jpg");
-	}
 }
 
 body {
@@ -48,7 +35,7 @@ body {
 .panel-container {
 	background: @panel-background;
 	padding: @block-padding;
-	margin-right: 10px;
+	margin-right: 0px;
 }
 
 .center-text-container {
@@ -167,11 +154,10 @@ hr {
  .composer-container {
   // Buttons inside button groups will have different stylings.
     .btn-group {
-
         .composer-discard {
             & {
                 background: @brand-danger;
-                color: @text-color;
+                color: @btn-text-color;
                 border: none;
                 box-shadow: none;
             }

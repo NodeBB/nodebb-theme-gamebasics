@@ -1,12 +1,9 @@
 .composer {
     .write {
-        color: @gray;
+        color: @text-color;
     }
 
     .preview-container {
-        background-image: url("@{image-path}/background_sm.jpg");
-        padding: 15px;
-        background-size: 100% 100%;
         .preview {
             overflow-y: auto;
 
@@ -21,10 +18,20 @@
                     margin-bottom: 0px;
                 }
             }
+
+            &.well {
+                border: 1px solid #EDEDED;
+            }
         }
 
         .help-text {
             color: @text-color !important;
+        }
+    }
+
+    .title-container {
+        .category-list {
+            border: 1px solid @panel-background-secondary;
         }
     }
 }

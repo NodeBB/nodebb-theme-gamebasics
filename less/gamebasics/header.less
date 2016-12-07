@@ -59,15 +59,18 @@
 		}
 		 > li {
 		 	> a {
-				 color: @text-color;
+				 color: @navbar-text-color;
 				 padding: 15px 9px;
 				 &:hover {
-					 color: darken(@text-color, 10%);
+					 color: darken(@navbar-text-color, 10%);
 				 }
 				 &:active {
 					 background-color: @menubg-active;
 					 color: @menubg-text-active;
 				 }
+			}
+			> i {
+				color: @navbar-text-color;
 			}
 			&.active {
 				> a {
@@ -132,11 +135,6 @@
 
 			.progress-bar {
 				background: @brand-primary;
-			}
-		}
-		@media (max-width: @screen-xs-max) {
-			.progress-container {
-			
 			}
 		}
 	}

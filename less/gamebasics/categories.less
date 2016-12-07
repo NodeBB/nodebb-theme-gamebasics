@@ -8,6 +8,8 @@
         color: gold;
 	}
 	> li {
+		padding-top: 5px;
+		padding-bottom: 0px;
 		width: 100%;
 		display:flex;
 		margin: 0px;
@@ -36,6 +38,13 @@
 			}
 			.full-height-panel {
 				min-height: 80px;
+				border-radius: 5px 0 0 5px;
+			}			
+		}
+
+		.col-md-3 {
+			.full-height-panel {
+				border-radius: 0 5px 5px 0;
 			}
 		}
 
@@ -48,6 +57,10 @@
 			right: 10px;
 			max-height: 82px;
 			overflow: hidden;
+
+			.user-img {
+				margin-right: 3px; 
+			}
 		}
 		.category-text-container {
 			h2 {
@@ -61,8 +74,11 @@
 				}
 			}
 		}
-		.content {
-	
+
+		.category-children {
+			.fa-stack {
+				margin-right: 3px;
+			}
 		}
 	}
 }

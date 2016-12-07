@@ -2,36 +2,39 @@
 @header-background:  rgba(0,109,215,.98);
 @text-secondary: #333; // Used for texts on a white background.
 @dropdown-menu-hover: #f5f5f5;
-@panel-background: rgba(2, 41, 82, 0.5);
-@panel-background-secondary: #337ab7;
+@panel-background: #fff;
+@panel-background-secondary: #eee;
 @text-secondary: #333;
 @chat-modal-panel-bg: #eee;
+@navbar-text-color: #fff;
+@btn-text-color: #fff;
 // Images included with this plugin should go in this folder. please make sure you always put images inside /public/images
 @image-path: "/plugins/nodebb-theme-gamebasics/images/";
 
 
 /* Start bootstrap variables */
-@text-color: #ffffff;
+@text-color: #555;
 @brand-primary:         #00a8ff;
 @headings-small-color:  @text-color;
 @body-bg:               transparent;
 
 @link-color:            @brand-primary;
-@link-hover-color:      @text-color;
+@link-hover-color:      #57c1f9;
+@btn-hover-color:       @btn-text-color;
 @link-hover-decoration: none;
 @state-info-text: @link-color;
 
-@well-bg: rgba(2, 41, 82, 0.5);
+@well-bg: @panel-background;
 @well-border: transparent;
 
 @breadcrumb-padding-vertical:   8px;
 @breadcrumb-padding-horizontal: 15px;
 @breadcrumb-active-color:       @text-color;
 
-@navbar-default-color:             @text-color;
+@navbar-default-color:             @navbar-text-color;
 @navbar-default-bg:                transparent;
-@navbar-default-link-color:        @text-color;
-@navbar-default-link-hover-color:   darken(@text-color, 10%);
+@navbar-default-link-color:        @navbar-text-color;
+@navbar-default-link-hover-color:   darken(@navbar-text-color, 10%);
 
 @table-bg-accent: @panel-background;
 @table-bg-hover: darken(@panel-background, 10%);
