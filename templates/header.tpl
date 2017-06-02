@@ -79,18 +79,16 @@
 		</section>
 		<!-- ENDIF config.loggedIn -->
 	</nav>
-
 	<main id="panel">
 		<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
 			<div class="container">
 				<!-- IMPORT partials/menu.tpl -->
 				<div class="back-to-osm">
-					<a href="http://onlinesoccermanager.com" target="blank">
+					<a href="http://onlinesoccermanager.com" target="_blank">
 						<img src="/plugins/nodebb-theme-gamebasics/images/back_to_OSM.png" />
 					</a>
 				</div>
 			</div>
-
 		</nav>
 		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->
